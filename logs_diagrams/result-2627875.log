@@ -1,0 +1,14 @@
+Original image: 960 x 720
+Processing image: 960 x 720
+Pixels: 691200
+Gaussian bandwidth: 0.1
+GPU: NVIDIA A100-SXM4-40GB
+Updating 691200 seeds...
+Seed updates completed. Merging...
+Clusters: 6
+GPU mean shift (s): 48.900648
+GPU merge workflow (s): 0.000584
+CUDA total including setup/transfers (s): 49.491607
+Seeds without convergence: 0/691200
+Processed input: result_gpu_fullw_input.png
+Result: result_gpu_fullw.png

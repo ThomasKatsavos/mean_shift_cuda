@@ -1,0 +1,8 @@
+Original: 960x720; processing: 64x48; N=3072
+Gaussian mean shift, RGB only, double precision, h=0.1
+Clusters: 3
+Mean shift (s): 2.253512
+Merge (s): 0.000038
+Clustering total (s): 2.253549
+Processed input: result_64_input.png
+Result: result_64.png

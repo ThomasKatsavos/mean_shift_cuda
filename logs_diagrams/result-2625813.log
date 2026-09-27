@@ -1,0 +1,8 @@
+Original: 960x720; processing: 512x384; N=196608
+Gaussian mean shift, RGB only, double precision, h=0.1
+Clusters: 6
+Mean shift (s): 8553.800331
+Merge (s): 0.003605
+Clustering total (s): 8553.803936
+Processed input: result_512_input.png
+Result: result_512.png
