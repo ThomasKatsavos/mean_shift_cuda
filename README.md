@@ -196,37 +196,7 @@ For example:
 
 The third argument specifies the maximum image dimension used for the execution. If there is no such argument, 64 is chosen by default, whereas if 0 is inserted, the full dimensions image is used. 
 
-### Serial
-
-```bash
-./sequential/mean_shift_gpu_serial input.jpeg output.png 512
-```
-
-### CUDA(Block-level)
-
-```bash
-./parallel/mean_shift_gpu input.jpeg output.png 512
-```
-
-### CUDA(Warp-level)
-
-```bash
-./parallel/mean_shift_gpu_warp input.jpeg output.png 512
-```
-
-### CUDA(Thread-level)
-
-```bash
-./parallel/mean_shift_gpu_thread input.jpeg output.png 512
-```
-
-### CUDA(Float)
-
-```bash
-./parallel_float/mean_shift_gpu_float input.jpeg output.png 512
-```
-
-There is no need to execute these commands as there are ready scripts for submitting the executables as Slurm jobs on Aristotelis. The command for submitting a Slurm script named 'run.sbatch' for a specific execution is:
+There are ready scripts for submitting the executables as Slurm jobs on Aristotelis. The command for submitting a Slurm script named 'run.sbatch' for a specific execution is:
 
 ```bash
 sbatch run.sbatch
