@@ -13,7 +13,7 @@ using namespace std;
 constexpr unsigned int BLOCK_SIZE = 256;
 constexpr unsigned int UNASSIGNED = 0xffffffffu;
 
-// Check for CUDA errors.
+// Check for CUDA errors
 void cuda_check(cudaError_t error) {
     if (error != cudaSuccess) {
         cerr << "CUDA error: "
