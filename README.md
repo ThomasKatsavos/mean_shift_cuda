@@ -202,7 +202,8 @@ There are ready scripts for submitting the executables as Slurm jobs on Aristote
 sbatch run.sbatch
 ```
 Each subdirectory contains already configured, ready-to-run Slurm scripts, that can be executed from the terminal on Aristotelis.
-To execute each one of those scripts with the command above suggests, the user must be in the respective working directory.
+To execute each one of those scripts with the command above suggests, the user must be in the respective working directory. The output of the execution
+is an automatically generated log file, as well as the produced processed image, all in the same directory with the executable and the Slurm script.
 
 ## Benchmarking
 
