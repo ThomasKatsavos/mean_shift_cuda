@@ -9,4 +9,4 @@
 module load gcc/14.2.0 cuda/12.6.2
 
 
-srun ./mean_shift_gpu photo.jpeg result_gpu.png 512
+srun ./mean_shift_gpu photo.jpeg result_gpu_block.png 512
