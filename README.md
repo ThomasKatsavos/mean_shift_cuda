@@ -142,8 +142,8 @@ The CUDA implementations use different mappings between Mean Shift seeds and GPU
 The project requires:
 
 * Access to Aristotelis Cluster
-* A C++17-compatible compiler (`g++`)
-* NVIDIA CUDA Toolkit (`nvcc`)
+* A C++17-compatible compiler (g++)
+* NVIDIA CUDA Toolkit (nvcc)
 
 
 The CUDA implementations are compiled using:
@@ -167,7 +167,7 @@ module load gcc/12.2.0 cuda
 
 ### Build the project
 
-The repository contains a root `Makefile` which invokes the Makefile in each implementation directory.
+The repository contains a root Makefile which invokes the Makefile in each implementation directory.
 
 Build all implementations with:
 
@@ -259,4 +259,4 @@ This allows the effect of the different CUDA parallelization strategies to be ev
 
 The serial implementation is intentionally straightforward and serves primarily as a correctness and performance baseline. The CUDA implementations retain the same RGB Mean Shift procedure while reorganizing its computational workload to exploit GPU parallelism.
 
-The project focuses exclusively on the **RGB feature space**. Pixel spatial coordinates `(x,y)` are not included in the Mean Shift feature vector.
+The project focuses exclusively on the **RGB feature space**. Pixel spatial coordinates (x,y) are not included in the Mean Shift feature vector.
