@@ -72,43 +72,65 @@ The CUDA implementations use different mappings between Mean Shift seeds and GPU
 ## Project Structure
 
 ```text
+
 .
-├── README.md
 ├── Makefile
-├── logs_diagrams/
-│
-├── parallel/
-│   ├── libs/
-│   │   ├── stb_image.h
-│   │   ├── stb_image_resize2.h
-│   │   └── stb_image_write.h
-│   ├── main_cuda.cpp
-│   ├── mean_shift_cuda.cu
-│   ├── mean_shift_cuda.h
-│   ├── mean_shift_cuda_thread.cu
-│   ├── mean_shift_cuda_warp.cu
-│   ├── Makefile
-│   └── run.sbatch
-│
-├── parallel_float/
-│   ├── libs/
-│   │   ├── stb_image.h
-│   │   ├── stb_image_resize2.h
-│   │   └── stb_image_write.h
-│   ├── main_cuda_float.cpp
-│   ├── mean_shift_cuda_float.cu
-│   ├── mean_shift_cuda_float.h
-│   └── Makefile
-│
-└── sequential/
-    ├── libs/
-    │   ├── stb_image.h
-    │   ├── stb_image_resize2.h
-    │   └── stb_image_write.h
+├── README.md
+├── logs_diagrams
+│   ├── gpu_full_ship_input.png
+│   ├── gpu_main_input.png
+│   ├── result-2625810.log
+│   ├── result-2625813.log
+│   ├── result-2625814.log
+│   ├── result-2626358.log
+│   ├── result-2627875.log
+│   ├── result-2628028.log
+│   ├── result-2628949.log
+│   ├── result_gpu128.png
+│   ├── result_gpu256.png
+│   ├── result_gpu512.png
+│   ├── result_gpu64t.png
+│   ├── result_gpu_full_ship.png
+│   ├── result_gpu_fullt.png
+│   ├── speedups_mean.png
+│   └── times_mean.png
+├── parallel
+│   ├── Makefile
+│   ├── libs
+│   │   ├── stb_image.h
+│   │   ├── stb_image_resize2.h
+│   │   └── stb_image_write.h
+│   ├── main_cuda.cpp
+│   ├── mean_shift_cuda.cu
+│   ├── mean_shift_cuda.h
+│   ├── mean_shift_cuda_thread.cu
+│   ├── mean_shift_cuda_warp.cu
+│   ├── photo.jpeg
+│   ├── run.sbatch
+│   ├── run_thread.sbatch
+│   └── run_warp.sbatch
+├── parallel_float
+│   ├── Makefile
+│   ├── libs
+│   │   ├── stb_image.h
+│   │   ├── stb_image_resize2.h
+│   │   └── stb_image_write.h
+│   ├── main_cuda_float.cpp
+│   ├── mean_shift_cuda_float.cu
+│   ├── mean_shift_cuda_float.h
+│   └── run.sbatch
+└── sequential
+    ├── Makefile
+    ├── libs
+    │   ├── stb_image.h
+    │   ├── stb_image_resize2.h
+    │   └── stb_image_write.h
     ├── main.cpp
     ├── mean_shift.cpp
     ├── mean_shift.h
-    └── Makefile
+    ├── photo2.jpeg
+    └── seq.sbatch
+
 ```
 
 ---
